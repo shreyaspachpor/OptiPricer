@@ -1,4 +1,4 @@
-# OptiVerse
+# optipricer
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
@@ -20,23 +20,23 @@ A high-performance Python library for options pricing, Greeks calculation, and d
 
 ### Install from PyPI
 ```bash
-pip install optiverse
+pip install optipricer
 ```
 
 ### Verify Installation
 ```python
-import optiverse
-print("OptiVerse installed successfully!")
+import optipricer
+print("Optipricer installed successfully!")
 ```
 
 ## Quick Start
 
 ### Basic Options Pricing
 ```python
-import optiverse
+import optipricer
 
 # Create a Black-Scholes model
-model = optiverse.models.BlackScholesModel(
+model = optipricer.models.BlackScholesModel(
     strike_price=100.0,      # Strike price
     volatility=0.25,         # 25% volatility
     risk_free_rate=0.05,     # 5% risk-free rate
@@ -55,7 +55,7 @@ print(f"Put Price: ${put_price:.4f}")
 ### Greeks Analysis
 ```python
 # Create Greeks calculator
-greeks = optiverse.models.GreeksCalculator(model)
+greeks = optipricer.models.GreeksCalculator(model)
 
 # Calculate Greeks
 delta_call = greeks.call_delta()
@@ -72,7 +72,7 @@ print(f"Theta: {theta_call:.4f}")
 ### Options Strategies
 ```python
 # Long Straddle Strategy
-straddle = optiverse.strategies.LongStraddle(
+straddle = optipricer.strategies.LongStraddle(
     underlying_price=100.0,
     volatility=0.25,
     risk_free_rate=0.05,
