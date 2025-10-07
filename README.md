@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# optipricer
-=======
 # OpticPricer
->>>>>>> 02f1bdb (changes in readme)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
@@ -99,11 +95,11 @@ straddle = optipricer.strategies.LongStraddle(
 current_value = straddle.total_value()
 total_delta = straddle.total_delta()
 
-print(f"Strategy Value: ${current_value:.2f}")
+print(f"Strategy Value: ₹{current_value:.2f}")
 print(f"Portfolio Delta: {total_delta:.4f}")
 
 # Expected output:
-# Strategy Value: $9.95
+# Strategy Value: ₹9.95
 # Portfolio Delta: 0.1291
 ```
 
