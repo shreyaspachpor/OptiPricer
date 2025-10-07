@@ -2,10 +2,9 @@ from pybind11.setup_helpers import Pybind11Extension, build_ext
 from pybind11 import get_include
 from setuptools import setup
 
-# Define the extension module
 ext_modules = [
     Pybind11Extension(
-        "optiverse",
+        "optipricer",
         [
             "src/python_bindings.cpp",
         ],

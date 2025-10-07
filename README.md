@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # optipricer
+=======
+# OpticPricer
+>>>>>>> 02f1bdb (changes in readme)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
@@ -37,19 +41,23 @@ import optipricer
 
 # Create a Black-Scholes model
 model = optipricer.models.BlackScholesModel(
-    strike_price=100.0,      # Strike price
-    volatility=0.25,         # 25% volatility
-    risk_free_rate=0.05,     # 5% risk-free rate
-    time_to_maturity=0.25,   # 3 months to expiration
-    underlying_price=105.0   # Current stock price
+    strike_price=105.0,      # Strike price (K)
+    volatility=0.25,         # 25% volatility (σ)
+    risk_free_rate=0.05,     # 5% risk-free rate (r)
+    time_to_maturity=0.25,   # 3 months to expiration (T)
+    underlying_price=100.0   # Current stock price (S)
 )
 
 # Calculate option prices
 call_price = model.call_price()
 put_price = model.put_price()
 
-print(f"Call Price: ${call_price:.4f}")
-print(f"Put Price: ${put_price:.4f}")
+print(f"Call Price: ${call_price:.2f}")
+print(f"Put Price: ${put_price:.2f}")
+
+# Expected output:
+# Call Price: $3.44
+# Put Price: $7.14
 ```
 
 ### Greeks Analysis
@@ -65,8 +73,14 @@ theta_call = greeks.call_theta()
 
 print(f"Call Delta: {delta_call:.4f}")
 print(f"Gamma: {gamma:.4f}")
-print(f"Vega: {vega:.4f}")
+print(f"Vega: {vega:.2f}")
 print(f"Theta: {theta_call:.4f}")
+
+# Expected output:
+# Call Delta: 0.4099
+# Gamma: 0.0311
+# Vega: 0.19
+# Theta: -0.0318
 ```
 
 ### Options Strategies
@@ -85,8 +99,12 @@ straddle = optipricer.strategies.LongStraddle(
 current_value = straddle.total_value()
 total_delta = straddle.total_delta()
 
-print(f"Strategy Value: ${current_value:.4f}")
+print(f"Strategy Value: ${current_value:.2f}")
 print(f"Portfolio Delta: {total_delta:.4f}")
+
+# Expected output:
+# Strategy Value: $9.95
+# Portfolio Delta: 0.1291
 ```
 
 ## API Reference
@@ -95,6 +113,13 @@ print(f"Portfolio Delta: {total_delta:.4f}")
 ```python
 BlackScholesModel(strike_price, volatility, risk_free_rate, time_to_maturity, underlying_price)
 ```
+
+**Parameters:**
+- `strike_price` (float): Option strike price
+- `volatility` (float): Underlying asset volatility (annualized)
+- `risk_free_rate` (float): Risk-free interest rate (annualized)
+- `time_to_maturity` (float): Time to expiration in years
+- `underlying_price` (float): Current price of underlying asset
 
 **Methods:**
 - `call_price()` → Calculate call option price

@@ -7,8 +7,8 @@
 
 namespace py = pybind11;
 
-PYBIND11_MODULE(optiverse, m) {
-    m.doc() = "OptiVerse: A comprehensive options pricing and analysis library";
+PYBIND11_MODULE(optipricer, m) {
+    m.doc() = "OptiPricer: A comprehensive options pricing and analysis library";
     
     // Utility functions
     m.def("norm_cdf", &optiverse::norm_cdf, "Standard normal cumulative distribution function",

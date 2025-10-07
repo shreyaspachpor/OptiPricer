@@ -3,18 +3,18 @@ requires = ["setuptools>=45", "wheel", "pybind11>=2.10.0", "pybind11[global]"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "optiverse"
+name = "optipricer"
 version = "0.1.0"
 description = "A comprehensive options pricing and analysis library"
 readme = "README.md"
-license = {file = "LICENSE"}
+license = "MIT"
 authors = [
     {name = "Shreyas Pachpor", email = "shreyaspachporr@gmail.com"}
 ]
 keywords = ["options", "pricing", "black-scholes", "derivatives", "finance", "quantitative"]
 classifiers = [
     "Development Status :: 3 - Alpha",
-    "Intended Audience :: Future and Options Trader",
+    "Intended Audience :: Financial and Insurance Industry",
     "Intended Audience :: Developers",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.7",
@@ -42,10 +42,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/shreyaspachpor/OptiVerse"
-Repository = "https://github.com/shreyaspachpor/OptiVerse"
-Documentation = "https://github.com/shreyaspachpor/OptiVerse#readme"
-"Bug Reports" = "https://github.com/shreyaspachpor/OptiVerse/issues"
+Homepage = "https://github.com/shreyaspachpor/OpticPricer"
+Repository = "https://github.com/shreyaspachpor/OpticPricer"
+Documentation = "https://github.com/shreyaspachpor/OpticPricer#readme"
+"Bug Reports" = "https://github.com/shreyaspachpor/OpticPricer/issues"
 
 [tool.setuptools]
 packages = []  # No pure Python packages, only extension module
