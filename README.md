@@ -10,7 +10,6 @@ A high-performance Python library for options pricing, Greeks calculation, and d
 - Black-Scholes-Merton Model for European options pricing
 - Greeks calculation (Delta, Gamma, Theta, Vega, Rho)
 - Options strategies (Calls, Puts, Straddles, Strangles)
-- High performance C++ implementation with Python bindings
 
 ## Installation
 
