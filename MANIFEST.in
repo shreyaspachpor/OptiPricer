@@ -2,6 +2,7 @@ include README.md
 include LICENSE
 include pyproject.toml
 recursive-include include *.hpp
+recursive-include include/optipricer *.hpp
 recursive-include src *.cpp
 global-exclude *.pyc
 global-exclude __pycache__

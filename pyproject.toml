@@ -42,10 +42,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/shreyaspachpor/OpticPricer"
-Repository = "https://github.com/shreyaspachpor/OpticPricer"
-Documentation = "https://github.com/shreyaspachpor/OpticPricer#readme"
-"Bug Reports" = "https://github.com/shreyaspachpor/OpticPricer/issues"
+Homepage = "https://github.com/shreyaspachpor/OptiPricer"
+Repository = "https://github.com/shreyaspachpor/OptiPricer"
+Documentation = "https://github.com/shreyaspachpor/OptiPricer#readme"
+"Bug Reports" = "https://github.com/shreyaspachpor/OptiPricer/issues"
 
 [tool.setuptools]
 packages = []  # No pure Python packages, only extension module

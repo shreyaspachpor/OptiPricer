@@ -1,5 +1,5 @@
-#ifndef OPTIVERSE_STRATEGIES_HPP
-#define OPTIVERSE_STRATEGIES_HPP
+#ifndef OPTIPRICER_STRATEGIES_HPP
+#define OPTIPRICER_STRATEGIES_HPP
 
 #include "models.hpp"
 #include "greeks.hpp"
@@ -7,7 +7,7 @@
 #include <string>
 #include <stdexcept>
 
-namespace optiverse {
+namespace optipricer {
 namespace strategies {
 
 enum class OptionType { CALL, PUT };
@@ -164,6 +164,6 @@ public:
 };
 
 } // namespace strategies
-} // namespace optiverse
+} // namespace optipricer
 
-#endif // OPTIVERSE_STRATEGIES_HPP
+#endif // OPTIPRICER_STRATEGIES_HPP
