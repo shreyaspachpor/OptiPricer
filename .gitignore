@@ -1,7 +1,6 @@
 # Python
 __pycache__/
 *.py[cod]
-*.so
 *.egg
 *.egg-info/
 dist/
@@ -15,6 +14,12 @@ env.bak/
 venv.bak/
 *.whl
 
+# Compiled extensions
+*.so
+*.pyd
+*.dylib
+*.dll
+
 # VSCode
 .vscode/
 
@@ -22,8 +27,8 @@ venv.bak/
 .DS_Store
 Thumbs.db
 
-# Test files
-test_*.py
-*_test.py
-tests/
-examples/
+# Testing
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/

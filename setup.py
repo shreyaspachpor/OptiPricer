@@ -4,7 +4,7 @@ from setuptools import setup
 
 ext_modules = [
     Pybind11Extension(
-        "optipricer",
+        "optipricer._core",
         [
             "src/python_bindings.cpp",
         ],

@@ -40,6 +40,16 @@ dev = [
     "flake8",
     "pybind11>=2.10.0",
 ]
+viz = [
+    "matplotlib>=3.0.0",
+]
+data = [
+    "pandas>=1.0.0",
+]
+all = [
+    "matplotlib>=3.0.0",
+    "pandas>=1.0.0",
+]
 
 [project.urls]
 Homepage = "https://github.com/shreyaspachpor/OptiPricer"
@@ -48,7 +58,11 @@ Documentation = "https://github.com/shreyaspachpor/OptiPricer#readme"
 "Bug Reports" = "https://github.com/shreyaspachpor/OptiPricer/issues"
 
 [tool.setuptools]
-packages = []  # No pure Python packages, only extension module
+packages = ["optipricer"]
+
+[tool.setuptools.package-data]
+optipricer = ["*.pyi", "py.typed"]
+
 
 [tool.pytest.ini_options]
 testpaths = ["tests/python"]
